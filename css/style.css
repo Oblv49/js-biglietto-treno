@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg_redRose {
+    background-color: #b9135a;
+}
+
+.c_redRose {
+    color: #b9135a;
+}

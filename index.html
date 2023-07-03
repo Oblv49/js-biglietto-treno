@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body class="bg_redRose">
+    <main class="mt-5">
+        <h1 class="text-white text-center fw-bold">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+        <!--Contenitore Dati -->
+        <div class="row bg-white w-75 mt-4 m-auto rounded-4 shadow d-flex justify-content-around">
+
+            <!-- FORM -->
+            <form class="row gy-2 gx-3 mb-5 mt-4 justify-content-around text-center">
+                <div class="col-3 mb-3">
+                    <h5 class="c_redRose mb-4">Nome Cognome</h5>
+                    <label class="visually-hidden" for="nameAndSurname">Name</label>
+                    <input type="text" class="form-control" id="nameAndSurname"
+                        placeholder="Inserisci il tuo nome e cognome">
+                </div>
+                <div class="col-3 mb-3">
+                    <h5 class="c_redRose mb-4">Km da percorrere</h5>
+                    <label class="visually-hidden" for="km">Name</label>
+                    <input type="text" class="form-control" id="km" placeholder="Inserisci il numero di km">
+                </div>
+                <div class="col-3 mb-3">
+                    <h5 class="c_redRose mb-4">Fascia d'età</h5>
+                    <label class="visually-hidden" for="ageRange">Preference</label>
+                    <select class="form-select" id="ageRange">
+                        <option selected>Scegli la Fascia d'età...</option>
+                        <option value="1">Maggiorenne</option>
+                        <option value="2">Minorenne</option>
+                        <option value="3">Over 65</option>
+                    </select>
+                </div>
+
+                <div class="col-6 mt-4 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-secondary border-black">Genera</button>
+                </div>
+                <div class="col-6 mt-4 d-flex justify-content-start">
+                    <button type="submit" class="btn btn-secondary border-black">Annulla</button>
+                </div>
+            </form>
+
+        </div>
+
+        <!-- Contenitore Biglietto -->
+        <h1 class="text-white text-center fw-bold mt-4">IL TUO BIGLIETTO</h1>
+
+        <div class="row bg-white w-75 mt-3 m-auto rounded-4 shadow">
+            <h6 class="mt-3">DETTAGLIO PASSEGGERI</h6>
+
+            <div class="d-flex border-top ">
+                
+                <div class="col-3 bg-secondary mb-3">
+                    <h5 class="mt-3 text-center text-white">NOME PASSEGGERO</h5>
+                    <p class="fs-5 text-center" id="passengerName">nome cognome</p>
+                </div>
+                
+                <div class="col-9 d-flex">
+                    <div class="col-4">
+                        <p class="p-2 fw-bold">Offerta</p>
+                        <p id="typeOffer"></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="p-2 fw-bold">Carrozza</p>
+                        <p id="carriage"></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="p-2 fw-bold">Codice CP</p>
+                        <p id="cpCode"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="p-2 fw-bold">Costo Biglietto</p>
+                        <p id="ticketPrice"></p>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
